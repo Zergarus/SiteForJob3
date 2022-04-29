@@ -31,6 +31,12 @@ $(document).ready(function(){
         navText : ["<i class='arrow-left'><img src='images/next 2.png' /></i>","<i class='arrow-right'><img src='images/next 2(1).png' /></i>"]
 
     });
+    $('.owl-four-formobile').owlCarousel({
+        items: 1,
+        loop:true,
+        margin:0,
+        nav:true,
+    });
     $(".button_play").on("click", function(){
         $('#video')[0].play();
         $('.button_play').hide();
@@ -39,4 +45,8 @@ $(document).ready(function(){
         $('#video')[0].pause();
         $('.button_play').show();
         });
+    $('.button_bottom').click(function(){
+        $("html, body").animate({ scrollTop: 0 }, 1200);
+        return false;
+    });
 });

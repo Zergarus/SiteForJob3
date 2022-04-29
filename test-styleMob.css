@@ -1,0 +1,70 @@
+@media (max-width: 425px){
+    body{
+        margin: 0;
+    }
+    .wallpapper_container{
+        display: grid;
+        grid-template-columns: 100%;
+        grid-auto-rows: repeat(4, auto);
+        gap:0;
+        row-gap: 15px;
+    }
+    .wallpapper img{
+        width: auto;
+    }
+    .wallpapper:nth-child(2),.wallpapper:nth-child(3),.wallpapper:nth-child(6),.wallpapper:nth-child(8),.wallpapper:nth-child(9),.wallpapper:nth-child(10),.wallpapper:nth-child(11),.wallpapper:nth-child(12){
+        display: none;
+    }
+    /*
+    .wallpapper-img{
+        position: relative;
+        overflow:hidden;
+        width:270px;
+        height:255px;
+    }
+    .wallpapper-img img{
+        position: absolute;
+        top:50%;
+        left:50%;
+        transform:translate(-50%,-50%);
+        width: 270px;
+        height: 255px;
+        object-fit:cover;
+    }
+    */
+    .wallpapper:nth-child(1){
+        grid-column-start: 1;
+        grid-row-start: 1;
+    }
+    .wallpapper:nth-child(4){
+        grid-column-start: 1;
+        grid-row-start: 2;
+    }
+    .wallpapper:nth-child(7){
+        grid-column-start: 1;
+        grid-row-start: 3;
+        position: relative;
+        bottom: auto;
+    }
+    .wallpappaerDeliveryInfo{
+        grid-column-start: 1;
+        grid-row-start: 4;
+        width: 100%;
+        position: relative;
+        bottom: auto;
+    }
+
+    .wallpapper>img{
+        width: 100%;
+    }
+    .wallpappaerDeliveryInfo__about, .wallpappaerDeliveryInfo__cost{
+        width: 100%;
+    }
+    .wallpapper-img img{
+        width: 100%;
+    }
+    .wallpappers{
+        margin-left: 25px;
+        margin-right: 25px;
+    }
+}
