@@ -1,0 +1,181 @@
+@media (max-width: 420px){
+    body{
+        margin: 0px;
+    }
+    .wallpappers{
+        margin: 0 7.81%;
+    }
+    .wallpapper_container{
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: auto auto auto auto;
+        gap: 0px;
+    }
+    .wallpapper:nth-child(1){
+        grid-column-start: 1;
+        grid-row-start: 1;
+    }
+    .wallpapper:nth-child(4){
+        grid-column-start: 1;
+        grid-row-start: 2;
+    }
+    .wallpapper:nth-child(4)>img{
+        width: 100%;
+    }
+    .wallpapper:nth-child(7){
+        grid-column-start: 1;
+        grid-row-start: 3;
+    }
+    .wallpappaerDeliveryInfo{
+        grid-column-start: 1;
+        grid-row-start: 4;
+        bottom: 0px;
+    }
+    .wallpappaerDeliveryInfo__about{
+        width: 100%;
+    }
+    .wallpappaerDeliveryInfo__cost{
+        width: 100%;
+    }
+    .wallpapper:nth-child(2),.wallpapper:nth-child(3),.wallpapper:nth-child(6),.wallpapper:nth-child(8),.wallpapper:nth-child(9),.wallpapper:nth-child(10),.wallpapper:nth-child(11),.wallpapper:nth-child(12){
+        display: none;
+    }
+    .wallpapper-img{
+        overflow: hidden;
+        border-top-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+    }
+    .wallpapper-img img {
+        object-fit: cover;
+        width: 100%;
+        height: calc(46px + 60vw);
+      }
+      .wallpappers>h1{
+        padding-left: 0;
+        font-size: 22px;
+        font-weight: 500;
+        line-height: 25px;
+        letter-spacing: 0em;
+    }
+    .wallpappers>a{
+        display: none;
+    }
+    .instagram{
+        display: none;
+    }
+    .instagram_mobile{
+
+        margin-top: 85px;
+        background-color: #F6F6F6;
+        padding-bottom: 54px;
+    }
+    .inst_title-mob{
+        margin:0 7.81%;
+        padding-top: 60px;
+        display: grid;
+        grid-template-columns: 20% auto;
+        align-items: center;
+    }
+    .inst_title-mob>img{
+       grid-column-start: 1;
+       width: 120%;
+    }
+    .inst_title-mob>h1{
+        grid-column-start: 2;
+        padding-left: 21px;
+        font-family: "Ubuntu" , sans-serif;
+        font-size: 29px;
+        font-weight: 500;
+        line-height: 33px;
+        color:#843C6A;
+        }
+
+    .instagram_mobile p{
+        margin:0 7.81%;
+        margin-bottom: 31px;
+        color: #4E3535;
+        font-family: "Ubuntu" , sans-serif;
+        font-size: 16px;
+        font-weight: 300;
+        line-height: 26px;
+    }
+    .subscribe_button{
+        display: flex;
+        justify-content: center;
+    }
+    .subscribe_button button{
+        width: 84.38%;
+        border: none;
+        height: 56px;
+        border-radius: 10px;
+        color: #fff;
+        background: linear-gradient(90deg, #9B4894 0%, #E94D94 51%, #F08B75 100%);
+        
+    }
+    .newWallpappers > h1{
+        margin-left: 7.81%;
+        font-size: 22px;
+        font-weight: 500;
+        color: rgba(132, 60, 106, 1);
+    }
+    .newWallpappers_slider{
+        display: block;
+        width: 100%;
+    }
+    .item__image{
+        overflow: hidden;
+    }
+    .item__image img {
+        object-fit: cover;
+        width: 77.19%;
+        height: calc(54px + 60vw);
+      }
+      .owl-one .active p{
+          margin-left: 7.81%;
+      }
+      .tiledecription{
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: auto auto;
+        margin-top: 85px;
+    }
+    .tiledecription__text{
+        grid-column-start: 1;
+        grid-row-start: 2;
+        font-family: 'Ubuntu', sans-serif; 
+        font-size: 18px;
+        font-weight: 300;
+        padding-left: 7.81%;
+      }
+      .tiledecription__text h1{
+        font-size: 26px;
+        line-height: 29.87px;
+      }
+      .tiledecription__text p{
+        font-size: 16px;
+        line-height: 27px;
+        color: #4E3535;
+
+      }
+      .tiledecription__image{
+        grid-column-start: 1;
+        grid-row-start: 1;
+      }
+      .tiledecription__image img{
+        width: 100%;
+        object-fit: cover;
+        height: calc(54px + 60vw);
+      }
+      .tiledecription__text>div{
+        display: none;
+      }
+      .roll{
+          color: #E94D94;
+          border:none;
+          background-color: #fff;
+          padding-left: 0px;
+      }
+      .hideThing{
+        margin-bottom: 6px;
+      }
+}
