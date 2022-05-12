@@ -1,13 +1,12 @@
 body {
     margin: 0;
-    max-width: 1903px;
   }
 
 .header_info{
     display: grid;
     
     background: linear-gradient(90deg, #F08B75 0%, #E94D94 51%, #9B4894 100%);
-    grid-template-columns: 260px 936px auto  auto 260px;
+    grid-template-columns: 13.66% 48.75% auto auto 13.66%;
     grid-template-rows: 40px;
     height: 40px;
     
@@ -34,6 +33,17 @@ body {
     justify-items: end;
     
 }
+@media (min-width: 421px) {
+    .deliveryDescription_formobile{
+        display: none;
+    }
+    .mobileLogo{
+        display: none;
+    }
+    .divForOwlFour_mobile{
+        display: none;
+    }
+} 
 
 .email-adress{
     display: flex;
@@ -69,7 +79,7 @@ body {
 }
 .header__nav{
     display: grid;
-    grid-template-columns: 260px 216px 755px auto  auto auto 260px;
+    grid-template-columns: 13.66% auto auto auto  auto auto 13.66%;
     height: 44px;
     padding-top: 18px;
     padding-bottom: 18px;
@@ -104,12 +114,23 @@ body {
 li{
     padding-right: 65px;
 }
+@media (max-width: 1600px) {
+    li{
+        padding-right: 30px;
+    }
+}
+@media (max-width: 1360px) {
+    li{
+        padding-right: 10px;
+        font-size: 14px;
+    }
+}
 .serchmark{
     grid-column-start: 4;
     border-left: 1px solid #CA3192;
     padding-left: 18px;
     margin: 15px;
-    margin-left: 52px;
+    margin-left: 7px;
 }
 .marks{
     
@@ -242,9 +263,10 @@ li{
     .owl-four .owl-dot.active span{
         background-color: #CA3192;
     }
+/*
 .wallpappers{
     display: grid;
-    grid-template-columns: 260px 339px 339px 339px 339px 210px;
+    grid-template-columns: 13.66% auto auto auto auto 13.66%;
     gap: 0 15px; 
 }
 .wallpappers > h1{
@@ -266,7 +288,7 @@ li{
 }
 .wallpappers > a>p{
     display: flex;
-    margin-left: 36px;
+    margin-left: 3px;
 }
 .wallpappers > a{
     grid-column-end: 6;
@@ -387,7 +409,202 @@ li{
 .marginetopforwallpappers2{
     margin-top: 30px;
 }
+*/
 
+
+.wallpappers > h1{
+    grid-column-start: 2;
+    font-family: 'Ubuntu', sans-serif; 
+    font-size: 46px;
+    font-weight: 500;
+    color: rgba(132, 60, 106, 1);
+    margin-bottom: 10px;
+}
+.wallpappers > a{
+
+    color: rgba(202, 49, 146, 1);
+    text-decoration: none;
+    font-family: 'Ubuntu', sans-serif; 
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+}
+.wallpappers > a>p{
+    display: flex;
+    margin-left: 3px;
+    margin-right: 11.3%;
+    justify-content: flex-end;
+}
+.wallpappers > a{
+    grid-column-end: 6;
+    transform: translate(160px,55px);
+}
+.imageName{
+    display: flex;
+}
+
+.wallpappaerDeliveryInfo{
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+
+}
+.wallpappaerDeliveryInfo__about{
+    height: 431px;
+    width: 338px;
+    background: rgba(246, 246, 246, 1);
+
+}
+.wallpappaerDeliveryInfo__about>h1{
+    padding-top: 42px;
+    padding-left: 27px;
+    font-family: 'Ubuntu', sans-serif; 
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 25px;
+    text-align: left;
+    color: #843C6A;
+
+
+}
+.wallpappaerDeliveryInfo__about-mainrow{
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+
+}
+.wallpappaerDeliveryInfo__about-mainrow div{
+    padding-left: 29px;
+    display: flex;
+    align-items: center;
+}
+.wallpappaerDeliveryInfo__about-mainrow p{
+    padding-left: 18px;
+}
+.wallpappaerDeliveryInfo__cost{
+    height: 80px;
+    width: 338px;
+    background: linear-gradient(90deg, #CA3192 0.29%, #FF98A6 100%);
+    border-bottom-right-radius: 20px;
+}
+.wallpappaerDeliveryInfo__cost-flex{
+    padding-left: 27px;
+    font-family: 'Ubuntu', sans-serif;
+    display: flex;
+    color: #FFFFFF;
+}
+.cost-flex1{
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24px;
+    margin: 0px;
+    padding-top: 20px;
+    padding-right: 5px;
+}
+.cost-flex2{
+    font-size: 42px;
+    font-weight: 300;
+    line-height: 24px;
+    margin: 0px;
+    padding-top: 29px;
+    padding-right: 10px;
+}
+.cost-flex3{
+    font-size: 22px;
+    font-weight: 300;
+    line-height: 24px;
+    margin: 0px;
+    padding-top: 34px;
+}
+.selfdelivery{
+    padding-left: 27px;
+    padding-top: 15px;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+}
+.selfdelivery h3{
+    margin: 0px;
+    font-size: 16px;
+    font-weight: 400;
+    color: #CA3192;
+    line-height: 24px;
+}
+.wallpapper_container{
+    display: grid;
+    grid-template-columns: 13.66% auto auto auto auto 13.66%;
+    grid-auto-rows: repeat(3, auto);
+    gap: 15px;
+}
+.wallpapper:nth-child(1){
+    grid-row-start: 1;
+    grid-column-start: 2;
+}
+.wallpapper:nth-child(2){
+    grid-row-start: 1;
+    grid-column-start: 3;
+}
+.wallpapper:nth-child(3){
+    grid-row-start:1;
+    grid-column-start: 4;
+}
+.wallpapper:nth-child(4){
+    grid-row-start: 1;
+    grid-column-start: 5;
+}
+.wallpapper:nth-child(5){
+    grid-row-start: 2;
+    grid-column-start: 2;
+}
+.wallpappaerDeliveryInfo{
+    grid-row-start: 2;
+    grid-column-start: 3;
+    position: relative;
+    bottom: 160px; 
+}
+.wallpapper:nth-child(7){
+    grid-row-start: 2;
+    grid-column-start: 4;
+}
+.wallpapper:nth-child(8){
+    grid-row-start: 2;
+    grid-column-start: 5;
+    position: relative;
+    bottom: 160px;
+}
+.wallpapper:nth-child(9){
+    grid-row-start: 3;
+    grid-column-start: 2;
+}
+.wallpapper:nth-child(10){
+    grid-row-start: 3;
+    grid-column-start: 3;
+    position: relative;
+    bottom: 160px;
+}
+.wallpapper:nth-child(11){
+    grid-row-start: 3;
+    grid-column-start: 4;
+    
+}
+.wallpapper:nth-child(12){
+    grid-row-start: 3;
+    grid-column-start: 5;
+    position: relative;
+    bottom: 160px;
+}
+
+.wallpappers>h1{
+    padding-left: 14.3%;
+}
+@media (min-width: 421px){
+    .wallpapperbuttons__container, .roll, .Paints_formobile{
+        display:none
+    }
+}
 
 
 .instagram{
@@ -461,11 +678,7 @@ li{
     grid-column-start: 2;
 
 }
-.item{
-    width: max-content;
-   
 
-}
 .imageName{
     display: flex;
     align-items: flex-end;
@@ -541,10 +754,7 @@ li{
     grid-column-start: 3;
   }
   .tiles{
-    display: grid;
-    grid-template-columns: 245px 339px 339px 339px 339px 260px;
     margin-top: 73px;
-    gap: 15px; 
 }
 .paintdescription{
     display: grid;
@@ -989,9 +1199,7 @@ li{
         letter-spacing: 0em;
 
     }
-    .nav1{
-        grid-column-start: 2;
-    }
+    
     .footerNav a{
         text-decoration: none;
     }
@@ -1016,6 +1224,9 @@ li{
     .listItem a:hover{
         color: rgba(202, 49, 146, 1);
 
+    }
+    .nav1{
+        grid-column-start: 2;
     }
     .nav2{
         grid-column-start: 3;
@@ -1098,8 +1309,7 @@ li{
     }
     .linktoup{
         display: flex;
-        width: 1903px;
-        padding-top: 11px;
+        width: auto;
         justify-content: center;
     }
     .imgforscroll{
@@ -1110,4 +1320,69 @@ li{
     }
     .footer{
         margin-top: 81px;
+        grid-template-columns: 50% auto 50%;
     }
+    .button_bottom{
+        width: auto;
+        background: none;
+        border: none;
+        margin-right: auto;
+        margin-left: auto;
+        grid-column-start: 2;
+    }
+    .button_bottom:active{
+        border: none;
+    }
+    @media (min-width: 421px) {
+        .instagram_mobile{
+            display: none;
+        }
+        .roll, .aboutUsForMobile, .respaceCopyRight, .FooterforMobile{
+            display: none;
+        }
+        .roll1, .roll2, .roll3, .roll4, .roll5, .roll6, .roll7{
+            display: none;
+        }
+    }
+.HiddenTextForWallpappers{
+    grid-row-start: 1;
+    grid-column-start: 2;
+    height: 99%;
+    position: absolute;
+    overflow: hidden;
+    bottom: 4px;
+    left: 0px;
+    padding-left: 27px;
+    opacity: 0;
+    transition: all 0.4s ease-in-out;
+    color: #fff;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+.HiddenTextForWallpappers p{
+    font-family: 'Ubuntu', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    padding-right: 25px;
+}
+.HiddenTextForWallpappers h1{
+    font-family: 'Ubuntu', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 25px;
+    margin-top: 27px;
+}
+
+.wallpapper-img{
+    position: relative;
+}
+.wallpapper-img:nth-child(1):hover .HiddenTextForWallpappers {
+    opacity: 1;
+    backdrop-filter: blur(8px);
+   }
+   .wallpapper-img:nth-child(1) img {
+    transition: all 0.5s linear;
+   }
